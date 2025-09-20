@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cheap Flights – Book Your Next Adventure in One Click</title>
+<style>
+/* Reset and full-page layout */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+/* Fullscreen container */
+.landing-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Dark overlay for readability */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+  z-index: 1;
+}
+
+/* Main content container */
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+/* Headline */
+h1 {
+  font-size: 4vw;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+/* Paragraph text */
+p {
+  font-size: 1.5vw;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* Benefits badges */
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.benefit {
+  background: rgba(255,255,255,0.15);
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1vw;
+  min-width: 120px;
+}
+
+/* CTA button */
+.cta-button {
+  display: inline-block;
+  padding: 1.5em 3em;
+  font-size: 2vw;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg,#ff6b35,#ff3b00);
+  border-radius: 50px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.45);
+}
+
+/* Urgency text */
+.urgency {
+  margin-top: 15px;
+  font-size: 1vw;
+  font-weight: bold;
+  color: #ffdd57;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 900px){
+  h1 { font-size: 6vw; }
+  p { font-size: 3.5vw; }
+  .benefit { font-size: 3vw; padding: 10px 15px; min-width: 100px; }
+  .cta-button { font-size: 4vw; padding: 1em 2em; }
+  .urgency { font-size: 3vw; }
+}
+
+@media (max-width: 500px){
+  h1 { font-size: 8vw; }
+  p { font-size: 4vw; }
+  .benefit { font-size: 4vw; padding: 8px 12px; min-width: 90px; }
+  .cta-button { font-size: 5vw; padding: 0.8em 1.5em; }
+  .urgency { font-size: 4vw; }
+}
+</style>
+</head>
+<body>
+<div class="landing-container">
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>Cheap Flights, One Click Away ✈️</h1>
+    <p>We’ve already found the <strong>lowest prices</strong>, <strong>exclusive deals</strong>, and <strong>no hidden fees</strong>. Just one click to start your next adventure!</p>
+    
+    <div class="benefits">
+      <div class="benefit">💸 Lowest Prices Guaranteed</div>
+      <div class="benefit">🔒 No Hidden Fees</div>
+      <div class="benefit">🌍 Exclusive Worldwide Deals</div>
+    </div>
+
+    <a href="https://wayaway.tpx.li/iVfBSncs" class="cta-button">🔥 Find My Cheap Flight</a>
+
+    <div class="urgency">⏳ Hurry! Deals change daily.</div>
+  </div>
+</div>
+</body>
+</html>
